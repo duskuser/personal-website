@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename='http://duskuser.github.io/personal-website'>
     <App />
   </BrowserRouter>
 );
