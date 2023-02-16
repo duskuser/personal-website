@@ -118,7 +118,7 @@ function Home() {
         if (width <= 480) {
             return (
                 <div className="hugs-image">
-                    <img src="/images/hugs.png"></img>
+                    <img src="images/hugs.png" alt="hearts unite logo"></img>
                 </div>
             )
         }
@@ -128,7 +128,7 @@ function Home() {
         if (width > 480)
             return (
                 <div className="hugs-image">
-                    <img src="/images/hugs.png"></img>
+                    <img src="images/hugs.png" alt="hearts unite logo"></img>
                 </div>
             )
 
