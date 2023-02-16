@@ -7,7 +7,8 @@
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-image: url(/public/images/collage.png);
     background-size: cover;
     animation: scroll-anim 45s linear infinite;
@@ -320,13 +321,6 @@
     padding: 1% 1% 0 1%;
 }
 
-.general-text {
-    background-color: rgb(0, 0, 0, .2);
-    border-radius: 18px;
-    padding: 1% 1% 0 1%;
-
-}
-
 .general-section p {
     font-size: 1.2rem;
 }
@@ -344,10 +338,9 @@
     border-radius: 5px;
 }
 
-/* Mobile */
+/* Small Screens / Mobile */
 
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 850px) {
     /* Header */
     .home-header {
         padding: 120px 1% 120px 1%;
@@ -383,6 +376,10 @@
 
     .hugs-container a {
         align-self: center;
+    }
+
+    .hugs-text a {
+        font-size: 1.6rem;
     }
 
     /* Past Section */
@@ -455,6 +452,10 @@
         font-size: 3rem;
     }
 
+    .languages-section h3 {
+        font-size: 1.1rem;
+    }
+
     .languages-flexbox {
         flex-direction: column;
     }
@@ -469,8 +470,8 @@
 
     .skills-list ul {
         display: grid;
+        grid-template-columns: repeat(3, auto);
         grid-gap: 5px;
-        padding: 5%;
     }
 
     /* Contact */
@@ -491,17 +492,8 @@
     .general-section p {
         font-size: 1.1rem;
     }
-
-}
-
-/* Small Screens
-
-@media screen and (max-width: 768px) {
-    .home-header {
-        padding: 60px 5% 60px 5%;
-    }
     
-} */
+}
 
 /* Laptops */
 

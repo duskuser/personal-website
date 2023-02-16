@@ -43,7 +43,7 @@ function Home() {
     // Renders
 
     const renderTypeAnimation = () => {
-        if (width <= 480) {
+        if (width <= 850) {
             console.log(width);
             return (
                 <>
@@ -115,7 +115,7 @@ function Home() {
     }
 
     const renderMobileImage = () => {
-        if (width <= 480) {
+        if (width <= 850) {
             return (
                 <div className="hugs-image">
                     <img src="images/hugs.png" alt="hearts unite logo"></img>
@@ -125,7 +125,7 @@ function Home() {
     }
 
     const renderDesktopImage = () => {
-        if (width > 480)
+        if (width > 850)
             return (
                 <div className="hugs-image">
                     <img src="images/hugs.png" alt="hearts unite logo"></img>
@@ -326,20 +326,27 @@ function Home() {
                                 <div className="languages-container">
                                     <h1 className="main-section-header">Languages</h1>
                                     <ul className="languages-list">
-                                        <li>
-                                            <h1 className="highlight">Proficent With</h1>
-                                            <h3>C/C++, Python, C#, Javascript, HTML, CSS</h3>
-                                        </li>
+                                        <Fade bottom delay={150}>
+                                            <li>
+                                                <h1 className="highlight">Proficent With</h1>
+                                                <h3>C/C++, Python, C#, Javascript, HTML, CSS</h3>
+                                            </li>
+                                        </Fade>
 
-                                        <li>
-                                            <h1 className="highlight">Experience Using</h1>
-                                            <h3>XAML, Java, Rust, MySQL, SQLite</h3>
-                                        </li>
+                                        <Fade bottom delay={150}>
+                                            <li>
+                                                <h1 className="highlight">Experience Using</h1>
+                                                <h3>XAML, Java, Rust, MySQL, SQLite</h3>
+                                            </li>
+                                        </Fade>
 
-                                        <li>
-                                            <h1 className="highlight">Familiarity With</h1>
-                                            <h3>x86 Assembly, Ruby</h3>
-                                        </li>
+                                        <Fade bottom delay={150}>
+                                            <li>
+                                                <h1 className="highlight">Familiarity With</h1>
+                                                <h3>x86 Assembly, Ruby</h3>
+                                            </li>
+                                        </Fade>
+                                        
                                     </ul>
                                 </div>
 
@@ -348,18 +355,22 @@ function Home() {
                                     <ul className="skills-list">
                                         {SkillsData.map((item, index) => {
                                             return (
-                                                <li key={index}>
-                                                    <h1 className="highlight">{item.title}</h1>
-                                                    <ul>
-                                                        {item.content.map((entry, entryIndex) => {
-                                                            return (
-                                                                <li>
-                                                                    <h3>{entry}</h3>
-                                                                </li>
-                                                            )
-                                                        })}
-                                                    </ul>
-                                                </li>
+                                                <Fade delay={(index * 150)}>
+                                                    <li key={index}>
+                                                        <h1 className="highlight">{item.title}</h1>
+                                                        <ul>
+                                                            {item.content.map((entry, entryIndex) => {
+                                                                return (
+                                                                    <Fade delay={(index * 150)}>
+                                                                        <li>
+                                                                            <h3>{entry}</h3>
+                                                                        </li>
+                                                                    </Fade>
+                                                                )
+                                                            })}
+                                                        </ul>
+                                                    </li>
+                                                </Fade>
                                             )
                                         })}
                                     </ul>
@@ -397,7 +408,7 @@ function Home() {
                                         for a customer no matter what their age group and experience with electronics may be. I put a lot of thought and care into optimizing the positionings and sizings of elements, as well as making sure that the backend
                                         can run as efficently as possible.</p>
 
-                                    <p>Thanks for Stopping By!</p>
+                                    <h2 className="highlight">Thanks for Stopping By!</h2>
                                 </div>
 
                                 {/* <div className="image-wrapper">
