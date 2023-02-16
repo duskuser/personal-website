@@ -1,0 +1,87 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 12px 24px 12px 24px;
+    background: none;
+    height: 8%;
+    border-radius: 13px;
+    position: relative;
+    margin: 0 20% 0 20%;
+    z-index: 2;
+    font-family: 'Archivo', sans-serif;
+    background-color: rgb(30, 39, 46, 0.7)
+}
+
+/* Logo */
+
+.navbar-logo {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.7rem, 1rem;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    transition: all 300ms ease-in-out;
+    margin-left: 12px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Items */
+
+.navbar-items {
+    display: grid;
+    padding-left: 0;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo {
+    padding: 20px 0 20px 0;
+    font-size: 2rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Links */
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.7rem, 1rem;
+    font-size: 2rem;
+    white-space: nowrap;
+    transition: all 300ms ease-in-out;
+}
+
+a.navbar-link {
+    padding: 10px;
+}
+
+.navbar-link i {
+    padding-right: 10px;
+}
+
+.navbar-link:hover {
+    background: #706fd3;
+    border-radius: 4px;
+    transition: all 300ms ease-in-out;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        margin: 0;
+        border-radius: 0;
+        justify-content: space-evenly;
+    }
+
+    .navbar-link {
+        font-size: 1.6rem;
+    }
+
+}
