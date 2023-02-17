@@ -115,7 +115,7 @@ function Home() {
     }
 
     const renderMobileImage = () => {
-        if (width <= 1080) {
+        if (width <= 1200) {
             return (
                 <div className="hugs-image">
                     <img src="images/hugs.png" alt="hearts unite logo"></img>
@@ -125,7 +125,7 @@ function Home() {
     }
 
     const renderDesktopImage = () => {
-        if (width > 1080)
+        if (width > 1200)
             return (
                 <div className="hugs-image">
                     <img src="images/hugs.png" alt="hearts unite logo"></img>

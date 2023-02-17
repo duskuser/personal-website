@@ -342,6 +342,31 @@
     border-radius: 5px;
 }
 
+@media screen and (max-width: 1200px) {
+    /* HUGS */
+
+    .hugs-container {
+        margin: 24px 5% 24px 5%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .hugs-container a {
+        align-self: center;
+    }
+
+    .hugs-text a {
+        font-size: 1.6rem;
+    }
+
+    .hugs-image img {
+        position: relative;
+        max-width: 50%;
+        top: 0;
+        left: 0;
+    }
+}
+
 /* Small Screens / Mobile */
 
 @media screen and (max-width: 1080px) {
@@ -369,26 +394,6 @@
     /* Projects */
 
     /* General Experience */
-
-    /* HUGS */
-
-    .hugs-container {
-        margin: 24px 5% 24px 5%;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .hugs-container a {
-        align-self: center;
-    }
-
-    .hugs-text a {
-        font-size: 1.6rem;
-    }
-
-    .hugs-image img {
-        position: relative;
-    }
 
     /* Past Section */
 
