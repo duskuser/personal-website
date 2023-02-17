@@ -130,14 +130,13 @@
 
 .hugs-image {
     flex-basis: 35%;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .hugs-image img {
     max-width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    align-self: center;
 }
 
 /* Past Section */
@@ -360,10 +359,7 @@
     }
 
     .hugs-image img {
-        position: relative;
         max-width: 50%;
-        top: 0;
-        left: 0;
     }
 }
 
