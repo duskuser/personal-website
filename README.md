@@ -1,1 +1,1 @@
-An Upload of my Personal Website (Still in Development)
+An Older Version of my Personal Website, still currently available using Github pages but not maintained.
